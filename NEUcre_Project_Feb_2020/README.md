@@ -1,12 +1,11 @@
-Author: Megan Skrobacz<br>
-Class: CS5006, Evening Section<br>
-Due: February 14, 2020 by midnight<br>
+<h1> NEUcre Project </h1>
+This was my first big project using C for my Algorithms class. This was a take on the game Eucre (https://en.wikipedia.org/wiki/Euchre). Although some starter code was provided to us, we were responsible for actually implementing the functions and logic.
+
+Below is my write-up for the assignment I completed at the time.
 
 <h2> Overview of Tasks and Development Process</h2>
 <h3> Milestone 1 </h3>
 For this assignment, I broke it down into a few basic tasks. The first, after pulling the starter files and copying them into my own repo, was to write skeletons for the functions required in deck.c. To do that, I copied the comments and structures as broken down in the a4.h header file. Then, I also looked at some of the Card functions that would probably need to be implemented in order for those functions to work properly (i.e. CreateCard() and DestroyCard()). Then, I would implement logic/code to make sure these functions work, and tested that by running the test file, with the un-implemented/part 2 functions commented out. Finally, I would run a valgrind once my functions were working to make sure I didn't have any memory leaks.<br><br>
-
-It should be noted that although the beginning of the A4 prompt does note that Shuffle() should be part of the deck.c file - and I did at some point try to implement it - I did notice later on, and was confirmed via speaking with a TA, that this function is not actually part of the requirements for Assignment 4. Thus, although I left it in my deck.c file to debug later, it is by no means complete.
 
 <h3> Milestone 2 </h3>
 This milestone really involved implementing the functions of the game, as well as the hand. I broke this down into four major areas - first, getting the structure of the hand working (such as creating a blank hand and destroying it when necessary); second, implementing functions that affect the contents of said hand (such as adding and removing cards from the hand); third, creating functions that affect the deck (shuffle, etc); and finally, functions that keep track of things like score and legal moves.
