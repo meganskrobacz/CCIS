@@ -1,0 +1,18 @@
+Before I attempted the coding portion of this assignment, here was my original design for the game:
+
+
+1) Game launches in main. Same as current starter code - input the board size, and the Board class draws the board.
+2) There would be a class called Rules which would solely handle determining if a) there is a winner and b) if the move is legal. Thus, there would be 2 helper functions in that class, to determine if there is a winner and whether, based on the click/input, the move is legal. The driver would have a while loop that would run steps 3-10 while winner == False.
+3) First, a helper function would figure out if there are indeed any moves available, based on the player's color. If not, the color would switch and it would do the same. If this happens twice (i.e. if there are no valid moves for either player), the winner variable would be switched to True and another function would report the winner based on who has the most pieces on the board/highest score (i.e. step 11).
+4) If there are moves available, the program then needs to do something with the clicks. Assuming that the player is black, and the computer is white, if the player's color is black, it would go through steps 5-10. If the player is white(computer), it would automatically go to Rules to determine what legal moves can be played (step 7), and move on from there. 
+First, a helper function, in Board, would figure out what square the person is clicking in based on the coordinates.
+5) Once the square has been determined via the helper function, the coordinates would be passed to a Records class, which is responsible for maintaining a running list of played moves. It would determine, based on the list of coordinates already played, whether the clicked square is open or not.
+6) If it is not a square that is open, nothing would happen. If the square is open, the coordinates would be passed to the Rules class to determine if the move is legal, based on the color of the player. Ideally, in Rules there would be a helper function that automatically determined a list of possible legal moves and compared it to the proposed move.
+7) If it is not a legal move, nothing would happen. If it is a legal move, the move would be recorded in Records, so that the class is updated with a running list of plays and open squares. If it's the computer's turn, the computer would choose to play the first item on the list of available plays in Rules. The Board class would then draw the piece using the starter code.
+8) Once the piece has been drawn, in Rules there would ideally be a helper function to figure out if there are existing pieces that need to be flipped. This could be accomplished by importing the list from Records, isolating the pieces that are of opposite color to the player, and determining whether any of those pieces are in the line of path for the played piece.
+9) If the helper function in Rules determines that there are indeed pieces to be flipped, two things should happen:
+9a) A call goes into the helper function in Board to draw a piece in the determined locations, in the determined color.
+9b) A call goes into Records to update the list of plays to be compared for future functions (i.e. change the entry from "white" to "black" or vice-versa as needed)
+10) After the piece has been drawn, the Board class would employ a helper function to automatically switch the color from black to white for the next turn.
+11) This cycle would continue until winner = True. If winner = True, it would print the "winner" message described in step 3.
+ 
