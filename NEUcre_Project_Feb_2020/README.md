@@ -1,5 +1,5 @@
-<h1> NEUcre Project </h1>
-This was my first big project using C for my Algorithms class. This was a take on the game Eucre (https://en.wikipedia.org/wiki/Euchre). Although some starter code was provided to us, we were responsible for actually implementing the functions and logic.
+<h1> NEUchre Project </h1>
+This was my first big project using C for my Algorithms class. This was a take on the game Euchre (https://en.wikipedia.org/wiki/Euchre). Although some starter code was provided to us, we were responsible for actually implementing the functions and logic.
 
 Below is my write-up for the assignment I completed at the time.
 
