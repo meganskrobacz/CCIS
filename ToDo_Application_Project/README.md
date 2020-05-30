@@ -1,5 +1,5 @@
 # To-Do Application Project
-This was the first significant group project I undertook during my academic career in a computer science program. We were tasked to build a program that would accept input from a command line regarding to-dos a user might want to add, complete, edit, or view (including filtering options). Our program would write any to-dos to a CSV saved on the user’s machine, and process input commands as necessary to edit a user’s list of to-dos and update the CSV file as necessary.
+This was the first significant group project I undertook during my academic career in a computer science program, in Spring 2020. We were tasked to build a program that would accept input from a command line regarding to-dos a user might want to add, complete, edit, or view (including filtering options). Our program would write any to-dos to a CSV saved on the user’s machine, and process input commands as necessary to edit a user’s list of to-dos and update the CSV file as necessary.
 
 ## Assumptions:<br>
 ValidateCommand:<br>
